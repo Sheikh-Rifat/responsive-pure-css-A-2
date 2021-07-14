@@ -1,0 +1,392 @@
+/* fonts added */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* utility and others */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+/* navbar css */
+header {
+    background: #2D25A0;
+
+}
+
+.topbar {
+    display: flex;
+    margin: 0px 156px;
+    padding: 42px;
+    justify-content: space-between;
+}
+
+.menu {
+    display: flex;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu ul li {
+    margin-right: 36px;
+}
+
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* button css
+--------------- */
+
+.login {
+    background: #E02C6D;
+    border: none;
+    outline: none;
+    padding: 10px 24px;
+    z-index: 1;
+    position: relative;
+    cursor: pointer;
+}
+
+.second {
+    margin: 27px 0px;
+    cursor: pointer;
+}
+
+.second i {
+    margin-left: 8px;
+}
+
+.login a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    text-transform: capitalize;
+}
+
+.login i {
+    color: #fff;
+    margin-right: 8px;
+}
+
+.login::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #7C83FD;
+    transition: transform 1s ease;
+
+    transform: scaleX(0);
+    transform-origin: left;
+    z-index: -1;
+}
+
+.login:hover::before {
+    transform: scaleX(1);
+}
+
+/* landing page design */
+
+.landing-page {
+    display: flex;
+}
+
+.left-colum {
+    margin: 70px 156px;
+    padding: 50px;
+    animation: colum-transition 2s ease;
+}
+
+.right-colum {
+    margin-right: 140px;
+    margin-left: 102px;
+    margin: 67px;
+}
+
+.details {
+    color: #fff;
+    font-size: 64px;
+}
+
+.right-colum img {
+    width: 556px;
+    animation: img-transition 2s ease;
+    transform: translateX(100px);
+}
+
+/* main section css start 
+-------------------------*/
+main{
+    max-width: 1140px;
+    width: 100%;
+    margin: auto;
+}
+.title {
+    margin: 80px;
+    text-align: center;
+}
+
+.title h1 {
+    text-transform: capitalize;
+    border-bottom: 3px solid #2D25A0;
+    padding: 20px 20px;
+    display: inline-block;
+}
+
+/* card syle 
+------------ */
+
+.players-list{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 30px;
+    margin: 70px;
+}
+.players {
+    width: 330px;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    margin-top: 27px;
+}
+
+.thumbnail img {
+    width: 300px;
+    margin: 15px;
+}
+
+.player-detail {
+    margin: 15px;
+    padding-bottom: 17px;
+}
+
+.player-detail h3{
+    font-size: 28px;
+}
+
+/* two colum section
+---------------------- */
+
+.two-colum{
+    margin: 160px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colum-1{
+    margin-right: 30px;
+    width: 469px;
+}
+.highlights{
+    font-size: 48px;
+    font-weight: 700px;
+    color: #0A0826;
+}
+.colum-1 p{
+    margin-right: 70px;
+}
+.colum-2 img{
+    width: 567px;
+    margin-left: 30px;
+}
+
+/* Bonus list section style */
+
+.bonus{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 60px;
+    margin: 160px 0;
+    position: relative;
+    width: 100%;
+}
+.rank-heading{
+    margin: 60px 0px;
+    margin-right: 30px;
+    left: 0;
+    top: 200px;
+}
+.rank-title{
+    font-size: 38px;
+}
+
+.men-section{
+    font-size: 30px;
+    margin-left: 30px;
+}
+.men-section h3{
+    text-align: center;
+}
+.list ol{
+    text-align: center;
+}
+.list li{
+    margin-top: 30px;
+}
+
+/* contact section styles */
+
+.contact{
+    margin-top: 160px;
+    margin-bottom: 160px;
+}
+
+/* form styles */
+form{
+    transform: translateX(36%);
+}
+input{
+    display: block;
+    margin-bottom: 60px;
+    padding: 15px 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+/* form button */
+.send{
+    margin-top: 20px;
+}
+
+
+/* footer styles */
+
+footer{
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    padding: 20px;
+}
+
+.footer-logo{
+    text-align: center;
+}
+.footer-logo img{
+    width: 480px;
+}
+.icons{
+    text-align: center;
+}
+.icons i {
+    padding: 8px;
+    background: #E7E7E8;
+    border-radius: 50%;
+    color: #969BAB;
+    margin-right: 14px;
+}
+.copyright{
+    text-align: center;
+    margin-top: 20px;
+}
+/* animation */
+
+@keyframes img-transition {
+    to {
+        transform: translateX(100px);
+    }
+
+    from {
+        transform: translateX(1000px);
+    }
+}
+
+@keyframes colum-transition {
+    to {
+        transform: translateX(0px);
+    }
+
+    from {
+        transform: translateX(-1000px);
+    }
+}
+
+
+/* Media Queries */
+
+@media (min-width:360px) and (max-width:400px){
+
+    .landing-page {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+    }
+    .right-colum {
+        margin: 105px;
+    }
+    .right-colum img {
+        width: 330px;
+        animation: img-transition 2s ease;
+        transform: translateX(100px);
+    }
+
+    /* cards responsive */
+    .players-list {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+        column-gap: 30px;
+        margin: 35px;
+    }
+/* highlights responsive */
+    .two-colum {
+        margin: 146px 0;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .colum-1 {
+        width: 330px;
+        position: relative;
+        left: 25px;
+    }
+    .highlights {
+        font-size: 30px;
+    }
+    .colum-1 p {
+        margin-right: 10px;
+    }
+     .colum-2 {
+         margin-top: 29px;
+    } 
+    .colum-2 img {
+        width: 330px;
+        margin-left: 31px;
+    }
+
+    /* bonus section */
+    .bonus {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 60px;
+        margin: 160px 20px;
+        position: relative;
+        width: 100%;
+    }
+    .men-section {
+        font-size: 25px;
+        margin-left: 30px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    /* form styles */
+    form {
+        transform: translateX(7%);
+    }
+
+    /* footer styles */
+    .footer-logo img {
+        width: 270px;
+    }
+}
